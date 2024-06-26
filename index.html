@@ -10,15 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-  </style>
 </head>
 <body>
 
   <!-- Sign-up form start -->
-  <div class="container">
+  <div class="container js-container">
     <div class="container-left">
       <div class="content-left">
         <p class="headline">
@@ -29,23 +25,24 @@
           Join 60,000+ product managers receiving monthly updates on:
         </p>
 
-        <div>
+        <div class="checklist">
           <img src="assets/images/icon-list.svg">
           Product discovery and building what matters
         </div>
-        <div>
+        <div class="checklist">
           <img src="assets/images/icon-list.svg">
           Measuring to ensure updates are a success
         </div>
-        <div>
+        <div class="checklist"> 
           <img src="assets/images/icon-list.svg">
           And much more!
         </div>
 
 
-        <p class="email-p">
-          Email address
-        </p>
+        <div class="email-div">
+          <p>Email address</p>
+          <P class="email-p-error">Valid email required</P>
+        </div>
         <input type="email" name="ensu" class="email-input" placeholder="email@company.com">
         <button class="button">
           Subscribe to monthly newsletter
@@ -56,15 +53,18 @@
     <img src="/assets/images/illustration-sign-up-desktop.svg">
   </div>
 
-  <div class="Success-Message">
+  <div class="container-success js-container-success">
     <!-- Success message start -->
+    <img src="assets/images/icon-success.svg">
+    <p class="headline">Thanks for subscribing!</p>
+    
 
-    Thanks for subscribing!
+    <p class="subhead">A confirmation email has been sent to <span class="subhead-extra">ash@loremcompany.com</span>. 
+      Please open it and click the button inside to confirm your subscription.</p>
+    
 
-    A confirmation email has been sent to ash@loremcompany.com. 
-    Please open it and click the button inside to confirm your subscription.
-
-    Dismiss message
+    <button class="button">Dismiss message</button>
+    
 
     <!-- Success message end -->
   </div>
