@@ -151,5 +151,12 @@ button:active{
   margin-bottom: 40px;
 }
 
+.secret {
+  font-size: 200px;
+  position: absolute;
+  display: flex;
+  z-index: 0.3;
+}
+
 .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 20px; color: var(--White)}
 .attribution a { color: hsl(228, 45%, 44%); }
