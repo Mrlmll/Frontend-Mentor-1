@@ -97,6 +97,15 @@ body {
   font-weight: 700;
   background-color: var(--Dark-Slate-Grey);
   color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: none;
+  background: linear-gradient(45deg, rgb(255, 135, 155), var(--Tomato));
+  box-shadow: 0px 15px 20px rgba(255, 98, 87, 0.3);
+}
+button:active{
+  opacity: 70%;
 }
 
 .js-container-success{
