@@ -44,3 +44,4 @@ document.querySelector('.js-dismiss-button').addEventListener('click', () => {
   successEl.classList.remove('container-success')
   successEl.classList.add('container-success-hidden')
 })
+
