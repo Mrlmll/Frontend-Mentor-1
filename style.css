@@ -1,0 +1,45 @@
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  font-family: 'roboto', sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: var(--Dark-Slate-Grey);
+}
+
+.container {
+  width: min-content;
+  background-color: var(--White);
+  display: grid;
+  grid-template-columns: 500px 400px;
+  padding: 25px;
+  border-radius: 35px;
+  column-gap: 10px;
+}
+
+.container-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-left div {
+  width: 90%;
+}
+
+.Success-Message {
+  display: none;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
